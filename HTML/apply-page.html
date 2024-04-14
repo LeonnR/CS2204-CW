@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leon Reuben Chen">
+    <meta name="description" content="Apply page.">
+    <meta name="keywords" content="Apply, HKIU">
+    <title>Apply</title>
+    <link rel="stylesheet" href="../CSS/apply.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="../CSS/printApply.css" media="print">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+</head>
+<body>
+      <div class="index-1">
+          <div class="headerdiv">
+          <header>
+            <a href="../index.html"><img class="hkiulogo" src="../images/logo.png" alt="HKIU logo"></a>    
+            </header>
+            <h1 class="headerh1">Hong Kong Industrial University</h1>
+      </div>
+      <nav class="index-nav">
+          <ul class="index-ul">
+            <li class="index-li home-li"><a class="index-a home-a" href="../index.html ">Home</a></li>
+            <li class="index-li about-li"><a class="index-a about-a" href="./about-page.html">About</a></li>
+            <li class="index-li apply-li"><a class="index-a apply-a" href="./apply-page.html">Apply</a> </li>
+            <li class="index-li visit-li"><a class="index-a visit-a" href="./visit-page.html">Visit</a> </li>
+            <li class="index-li program-li"><a class="index-a program-a" href="./program-page.html">Program</a></li>
+            <li class="index-li contact-li"><a class="index-a contact-a" href="./contact-page.html">Contact</a></li>
+          </ul>
+      </nav>
+      </div>
+
+    
+        <p class="apply-welcome">Welcome to HKIU</p>
+      <div class="college">
+       
+        <h4>Common Application to Undergraduate Program</h4>
+        
+
+            <a class="engineeringref" onclick="show(1)"><div class="engineeringbutton" id="engineeringbutton">College of Engineering</div></a>
+            <a class="scienceref" onclick="show(2)"><div class="sciencebutton" id="sciencebutton">College of Science</div></a>
+            <a class="interdisciplinaryref" onclick="show(3)"><div class="interdisciplinarybutton" id="interdisciplinarybutton">College of Interdisciplinary Studies</div></a>
+     
+
+
+        <div class="engineering" id="engineering">
+          <form class="majorform" id="cs-form" method="get" action="#" onsubmit="event.preventDefault()">
+              <img src="../images/cs.png" width="200" height="200" alt="cs logo"><br>
+              <label for="cs">BSc in Computer Science and Technology</label><br>
+              <input type="text" id="cs" name="cs">
+              <button onclick="majorRank('cs'); updateTable(); callDisplayTime()">rank of choice</button>
+          </form>
+         
+          <form class="majorform" id="ei-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/ei.png" width="200" height="200" alt="ei logo"><br>
+            <label for="ei">BEng in Electronic Information </label><br>
+            <input type="text" id="ei" name="ei">
+            <button onclick="majorRank('ei'); updateTable(); callDisplayTime()">rank of choice</button>
+          </form>
+          
+          <form class="majorform" id="mse-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/mse.png" width="200" height="200" alt="mse logo"><br>
+            <label for="mse">BEng in Materials Science and Engineering </label><br>
+            <input type="text" id="mse" name="mse">
+            <button onclick="majorRank('mse'); updateTable(); callDisplayTime()">rank of choice</button>
+          </form>
+          
+          <form class="majorform" id="mc-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/mc.png" width="200" height="200" alt="mc logo"><br>
+            <label for="mc">BEng in Materials and Chemicals </label><br>
+            <input type="text" id="mc" name="mc">
+            <button onclick="majorRank('mc'); updateTable(); callDisplayTime()">rank of choice</button>
+          </form>
+          
+          <form class="majorform" id="est-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/est.png" width="200" height="200" alt="mc logo"><br>
+            <label for="est">BSc in Electronic Science and Technology</label><br>
+            <input type="text" id="est" name="est">
+             <button onclick="majorRank('est'); updateTable(); callDisplayTime()">rank of choice</button>
+          </form>
+      </div>
+
+      <div class="science" id="science">
+        <form class="majorform" id="phy-form" method="get" action="#" onsubmit="event.preventDefault()"> 
+          <img src="../images/phy.png" width="200" height="200" alt="mc logo"><br>
+          <label for="phy">BSc in Physics</label><br>
+          <input type="text" id="phy" name="phy">
+          <button onclick="majorRank('phy'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+        
+        <form class="majorform" id="chem-form" method="get" action="#" onsubmit="event.preventDefault()">
+          <img src="../images/chem.png" width="200" height="200" alt="mc logo"><br>
+          <label for="chem">BSc in Chemistry</label><br>
+          <input type="text" id="chem" name="chem">
+          <button onclick="majorRank('chem'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+        
+        <form class="majorform" id="bio-form" method="get" action="#" onsubmit="event.preventDefault()">
+          <img src="../images/bio.png" width="200" height="200" alt="mc logo"><br>
+          <label for="bio">BSc in Biology</label><br>
+          <input type="text" id="bio" name="bio">
+          <button onclick="majorRank('bio'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+    </div>
+    
+      <div class="interdisciplinary" id="interdisciplinary">
+        <form class="majorform" id="cogs-form" method="get" action="#" onsubmit="event.preventDefault()">
+          <img src="../images/cogs.png" width="200" height="200" alt="mc logo"><br>
+          <label for="cogs">BSc in Cognitive Science</label><br>
+          <input type="text" id="cogs" name="cogs">
+          <button onclick="majorRank('cogs'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+
+        <form class="majorform" id="be-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/be.png" width="200" height="200" alt="mc logo"><br>
+            <label for="be">BEng in Biomedical Engineering</label><br>
+            <input type="text" id="be" name="be">
+            <button onclick="majorRank('be'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+            
+        <form class="majorform" id="bm-form" method="get" action="#" onsubmit="event.preventDefault()">
+            <img src="../images/bm.png" width="200" height="200" alt="mc logo"><br>
+            <label for="bm">BSc in Biology and Medicine</label><br>
+            <input type="text" id="bm" name="bm">
+            <button onclick="majorRank('bm'); updateTable(); callDisplayTime()">rank of choice</button>
+        </form>
+          
+      </div>
+      </div>
+   
+  
+  <div class="apply-form">
+    <form class="last-form" id="last-form">
+      <h2>Your chosen majors:</h2>
+      <div id="changeTimeContainer" class="changeTimeContainer"><h3>Last change time:</h3></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>College</th>
+            <th>Major</th>
+            <th>Rank</th>
+          </tr>
+      
+        </thead>
+
+        <tbody> 
+          
+          <tr class="apply-tr">
+            <td class="td-odd td-college" id="college-1"></td>
+            <td class="td-odd td-major" id="major-1"></td>
+            <td class="td-odd">1</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-even td-college" id="college-2"></td>
+            <td class="td-even td-major" id="major-2"></td>
+            <td class="td-even">2</td>
+          </tr>
+          
+          <tr class="apply-tr">
+            <td class="td-odd td-college" id="college-3"></td>
+            <td class="td-odd td-major" id="major-3"></td>
+            <td class="td-odd">3</td>  
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-even td-college" id="college-4"></td>
+            <td class="td-even td-major" id="major-4"></td>
+            <td class="td-even">4</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-odd td-college" id="college-5"></td>
+            <td class="td-odd td-major" id="major-5"></td>
+            <td class="td-odd">5</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-even td-college" id="college-6"></td>
+            <td class="td-even td-major" id="major-6"></td>
+            <td class="td-even">6</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-odd td-college" id="college-7"></td>
+            <td class="td-odd td-major" id="major-7"></td>
+            <td class="td-odd">7</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-even td-college" id="college-8"></td>
+            <td class="td-even td-major" id="major-8"></td>
+            <td class="td-even">8</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-odd td-college" id="college-9"></td>
+            <td class="td-odd td-major" id="major-9"></td>
+            <td class="td-odd">9</td>
+          </tr>
+
+          <tr class="apply-tr">
+            <td class="td-even td-college" id="college-10"></td>
+            <td class="td-even td-major" id="major-10"></td>
+            <td class="td-even">10</td>
+          </tr>
+        </tbody>
+      </table> <br>
+
+      <div id="appliedMajorsContainer" class="appliedMajorsContainer"><h3>Total Number of Majors Applied:</h3></div>
+      <br>
+      <br>
+      <input class="applysubmit" type="submit" id="applysubmit" name="applysubmit" value="submit">
+      <input class="applyreset" type="reset" id="applyreset" name="applyreset" value="clear" onclick="formClear()">
+      <br>
+      <br>
+      <br>
+      <div id="errorDiv"></div>
+    </form>
+  </div>
+    <footer>
+        <img src="../images/footer_logo.png" class="footerpic" alt=" HKIU footer">
+        <p>© CityU 2023 sources of images and text from Wikipedia Commons and
+            Courtesy of Icon pack by Icons8 -- designed by <a href="design-page.html">Leon Reuben Chen</a></p>
+    </footer>
+    <script src="../scripts/apply-page.js"></script>
+</body>
+</html>

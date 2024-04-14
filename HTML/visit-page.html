@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leon Reuben Chen">
+    <meta name="description" content="Visit page.">
+    <meta name="keywords" content="Visit, HKIU">
+    <title>Visit</title>
+    <link rel="stylesheet" href="../CSS/visit.css" type="text/css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+</head>
+<body>
+        <div class="index-1">
+            <div class="headerdiv">
+            <header>
+                <a href="../index.html"><img class="hkiulogo" src="../images/logo.png" alt="HKIU logo"></a>    
+              </header>
+              <h1 class="headerh1">Hong Kong Industrial University</h1>
+        </div>
+        <nav class="index-nav">
+            <ul class="index-ul">
+                <li class="index-li home-li"><a class="index-a home-a" href="../index.html">Home</a></li>
+                <li class="index-li about-li"><a class="index-a about-a" href="./about-page.html">About</a></li>
+                <li class="index-li apply-li"><a class="index-a apply-a" href="./apply-page.html">Apply</a> </li>
+                <li class="index-li visit-li"><a class="index-a visit-a" href="./visit-page.html">Visit</a> </li>
+                <li class="index-li program-li"><a class="index-a program-a" href="./program-page.html">Program</a></li>
+                <li class="index-li contact-li"><a class="index-a contact-a" href="./contact-page.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    <div class="visit-p">
+        <p>We warmly welcome you to visit us at our Kowloon campus and experience our
+            vibrant learning community. Our campus is located in the Hong Kong Kowloon
+            High-Tech Park, where we collaborate closely with institutes of the
+            Chinese Academy of Sciences. </p>
+        <p> During your visit, you can explore our world-class facilities, including
+            the Protein Folding Science Center, Hong Kong Advanced Computing
+            Equipment, Hong Kong Ultrafast Laser Facility, Hong Kong Electron-Positron
+            Collider, and Hong Kong Supercomputer Facility. These facilities are
+            available to our faculty, students, and researchers worldwide. </p>
+            <p> You will also have the chance to meet our renowned scholars and experts
+            from home and abroad committed to providing students with cutting-edge
+            knowledge and skills in their respective fields. Our faculty members are
+            recognized leaders in their fields, and their research has been published
+            in prestigious journals such as Cell, Nature, and Science. </p>
+           <p>
+            We hope you will come and visit us soon to experience firsthand the
+            dynamic and innovative community at Hong Kong Industrial University.</p>
+    </div>
+
+    <div class="visit-location">
+        <img src="../images/location.jpg" class="location-pic" alt="Location of HKIU">
+    </div>
+
+    <div class="visit-address">
+        <h2>Location</h2>
+        <p>Address: Tat Chee Avenue, Kowloon, Hong Kong SAR</p>
+        <p>Tel: (852) 1234 5678</p>
+        <p>Fax: (852) 8765 4321</p>
+        <p>Email: visit@hkiu.edu.hk</p>
+            
+    </div>
+       
+   
+    
+    <br>
+    <br>
+
+    <div class="visit2">
+        <h2 class="open-day">Hong Kong Industrial University is having an open day on campus! Please make a reservation to visit our campus!</h2>
+
+            <form class="visit-form" id="visit-form">
+                <fieldset>
+                <legend>Booking Information:</legend>
+                <div class="form-inner">
+                    <div class="form-labels">
+                        <label for="date">Date:</label>
+                        <label for="time">Time: </label>
+                        <label for="visitors">No. of visitors: </label>
+                    </div>
+
+                    <div class="form-inputs">
+                        <input class="input-date" type="date" name="date" id="date" value=""> <br>
+                        <select class="input-time" id="time" name="time">
+                            <option value="option1">8:30 - 9:30am</option>
+                            <option value="option2">9:30 - 10:30am</option>
+                            <option value="option3">10:30 - 11:30am</option>
+                            <option value="option4">1:30 - 2:30pm</option>
+                            <option value="option5">2:30 - 4:00pm</option>
+                            <option value="option6">4:00 - 5:00pm</option>
+                        </select> <br>
+                        <input class="input-num" type="text" name="visitors" id="visitors"> <br> <br>
+                    </div>
+
+               
+                </div> 
+                <div id="errorDiv"></div>
+                <div class="form-inner2">
+                    <input class="visitsubmit" id="visitSubmit" type="submit" value="Check availability">
+                    <input class="visitreset" id="visitReset" type="reset" value="Reset">
+                </div>
+                </fieldset>
+            </form>
+        
+    </div>
+    <footer>
+        <img src="../images/footer_logo.png" class="footerpic" alt="HKIU footer">
+        <p>© CityU 2023 sources of images and text from Wikipedia Commons and
+            Courtesy of Icon pack by Icons8 -- designed by <a href="design-page.html">Leon Reuben Chen</a></p>
+    </footer>
+
+    <script src="../scripts/visit-page.js" ></script>
+    <script src="https://personal.cs.cityu.edu.hk/~cs2204/2023/cw3cs2204.js"></script>
+</body>
+</html>

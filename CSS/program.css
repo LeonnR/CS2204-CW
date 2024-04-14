@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: pink;
+}
+
+.hkiulogo{
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+    width: 400px;
+    height: 100px;
+}
+
+.index-1{
+    background-color: rgb(185, 66, 239);
+}
+.headerdiv{
+    background: linear-gradient(90deg, rgba(222,112,175,1) 0%, rgba(183,29,253,1) 50%, rgba(252,164,69,1) 100%);
+}
+
+.headerh1{
+    margin-top: 0;
+    margin-right: auto;
+    margin-left:auto;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 20px; 
+    background-image: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #10eb97 29%,
+        #4478e8 67%,
+        #e82323 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textanimation 2s linear infinite;
+    }
+    
+    @keyframes textanimation {
+    to {
+        background-position: 200% center;
+    }
+     }
+
+.index-ul{   
+list-style-type: none;
+display: flex;
+margin: auto;
+/* background-color: rgb(190, 57, 211); */
+padding-bottom: 20px;
+background-color: black;
+padding-top: 20px;
+}
+
+.index-li{
+    margin:auto;
+}
+
+.index-li:hover{
+    opacity: 1;
+}
+
+.program-li{
+    opacity: 1;
+    border-bottom: 3px solid pink;
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.index-nav{
+display: block;
+margin: auto
+}
+
+.index-a{
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    opacity: 0.75;
+    transition: 0.3s ease-out 100ms;
+}
+
+.program-a{
+    opacity: 1;
+    border-bottom: 3px solid pink;
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.index-a:hover{
+    text-decoration: none;
+    color: rgb(250, 213, 219);
+    /* font-size: px; */
+    opacity: 1;
+    border-bottom: 3px solid pink;
+}
+
+.index-a:active{
+    text-decoration: none;
+    color: rgb(250, 213, 219);
+    font-size: 20px;
+    background-color: rgb(193, 110, 232);
+    padding: 20px;
+}
+
+.index-a:visited{
+    text-decoration: none;
+    color: white;
+    /* font-size: px; */
+    opacity: 0.75;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.programs{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#programh2{
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin-top: 40px;
+}
+
+video{
+    width: 40%;
+    float: left;
+    
+}
+
+.program1{
+    margin-top: 40px;
+}
+
+
+.program-table{
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+thead{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: rgb(112, 111, 111);
+}
+
+th{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+    border-collapse: collapse;   
+}
+
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+tbody{
+    background-color: white;
+}
+
+tbody > tr:hover{
+    background-color: rgb(148, 109, 116);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(213, 184, 239);
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footerpic{
+    width: 300px;
+    height: 100px;
+}

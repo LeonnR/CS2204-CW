@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: pink;
+}
+
+.hkiulogo{
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+    width: 400px;
+    height: 100px;
+}
+
+.index-1{
+    background-color: rgb(185, 66, 239);
+}
+
+.headerdiv{
+    background: linear-gradient(90deg, rgba(222,112,175,1) 0%, rgba(183,29,253,1) 50%, rgba(252,164,69,1) 100%);
+}
+
+.headerh1{
+    margin-right: auto;
+    margin-left:auto;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 20px;
+    background-image: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #10eb97 29%,
+        #4478e8 67%,
+        #e82323 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textanimation 2s linear infinite;
+    }
+    
+    @keyframes textanimation {
+    to {
+        background-position: 200% center;
+    }
+     }
+
+.index-ul{   
+list-style-type: none;
+display: flex;
+margin: auto;
+/* background-color: rgb(190, 57, 211); */
+padding-bottom: 20px;
+background-color: black;
+padding-top: 20px;
+}
+
+.index-li{
+    margin:auto;
+}
+
+.index-li:hover{
+    opacity: 1;
+}
+
+.apply-li{
+    opacity: 1;
+    border-bottom: 3px solid pink;
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.index-nav{
+display: block;
+margin: auto
+}
+
+.index-a{
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    opacity: 0.75;
+    transition: 0.3s ease-out 100ms;
+}
+
+.apply-a{
+    opacity: 1;
+    border-bottom: 3px solid pink;
+    text-decoration: none;
+    color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.index-a:hover{
+    text-decoration: none;
+    color: rgb(250, 213, 219);
+    /* font-size: px; */
+    opacity: 1;
+    border-bottom: 3px solid pink;
+}
+
+.index-a:active{
+    text-decoration: none;
+    color: rgb(250, 213, 219);
+    font-size: 20px;
+    background-color: rgb(193, 110, 232);
+    padding: 20px;
+}
+
+.index-a:visited{
+    text-decoration: none;
+    color: white;
+    /* font-size: px; */
+    opacity: 0.75;
+}
+
+.apply-welcome{
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20px;
+}
+
+.college-2{
+    display: flex;
+    margin: auto;
+}
+
+.college{
+    border: 3px solid grey;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 8px;
+}
+h4{
+    margin-bottom: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h5{
+    margin: 1px 10px 10px 0;
+    background-color: grey;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.engineeringref{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+.scienceref{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+.interdisciplinaryref{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.engineering{
+    display: none;
+    padding-top: 20px;
+}
+
+
+
+/* .engineeringbutton:hover ~ .engineering{
+    display: block;
+}
+
+.engineeringref:hover ~ .engineering{
+    display: block;
+} */
+
+.engineeringbutton{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(195, 140, 195);
+    border-radius: 15px 15px 5px 5px;
+    width: 300px;
+    border: 3px solid black;
+    border-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* .engineeringbutton:hover{
+    background-color: white;
+}
+
+.engineeringbutton:has(~.engineering:hover){
+    background-color: white;
+} */
+
+/* .sciencebutton:has(~.science:hover){
+    background-color: white;
+}
+
+.interdisciplinarybutton:has(~.interdisciplinary:hover){
+    background-color: white;
+} */
+
+.engineering:hover{
+    display: block;
+}
+
+
+.science:hover{
+    display: block;
+}
+
+.interdisciplinary:hover{
+    display: block;
+}
+
+/* .interdisciplinary:hover ~ .interdisciplinarybutton{
+    background-color: white;
+} */
+
+img{
+    border-radius: 15px;
+}
+
+.majorform{
+    border: 3px solid grey;
+    border-radius: 15px;
+    margin: 0px;
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
+
+.majorform:hover{
+    background-color: rgb(195, 140, 195);
+}
+
+
+.science{
+    display: none;
+    padding-top: 20px;
+}
+
+/* .sciencebutton:hover ~ .science{
+    display: block;
+} */
+
+.sciencebutton{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(195, 140, 195);
+    border-radius: 15px 15px 5px 5px;
+    border: 3px solid black;
+    border-bottom: 0;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* .sciencebutton:hover{
+    background-color: white;
+} */
+
+
+.interdisciplinary{
+    display: none;
+    padding-top: 20px;
+}
+
+/* .interdisciplinarybutton:hover ~ .interdisciplinary{
+    display: block;
+} */
+
+.interdisciplinarybutton{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(195, 140, 195);
+    border-radius: 15px 15px 5px 5px;
+    border: 3px solid black;
+    border-bottom: 0;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* .interdisciplinarybutton:hover{
+    background-color: white;
+} */
+
+.apply-form{
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+h2{
+    margin: 30px 0;
+}
+
+h3{
+    margin: 15px 0;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+thead{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: rgb(112, 111, 111);
+    color: pink;
+}
+
+th{
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: black;
+}
+
+tr{
+    border: 1px solid grey;
+    border-collapse: collapse;   
+}
+
+td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.changeTimeContainer{
+    margin-bottom: 20px;
+    height: 20px;
+
+}
+
+.appliedMajorsContainer{
+    margin-top: 2px;
+    height: 20px;
+}
+
+.apply-tr:hover{
+    background-color: pink;
+}
+
+tbody{
+    background-color: rgb(219, 218, 218);
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+.applysubmit{
+    padding: 5px;
+}
+
+.applyreset{
+    padding: 5px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(213, 184, 239);
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+}
+
+#errorDiv{
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.footerpic{
+    width: 300px;
+    height: 100px;
+}
